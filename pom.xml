@@ -30,6 +30,9 @@
             </goals>
             <configuration>
               <classifier>client</classifier>
+              <includes>
+                <include>**/AppClient*</include>
+              </includes>			  
             </configuration>
           </execution>
           <execution>
@@ -40,6 +43,9 @@
             </goals>
             <configuration>
               <classifier>server</classifier>
+              <includes>
+                <include>**/AppServer*</include>
+              </includes>			  
             </configuration>
           </execution>
         </executions>
