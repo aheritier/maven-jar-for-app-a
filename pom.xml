@@ -23,12 +23,23 @@
         <version>3.0.2</version>
         <executions>
           <execution>
+            <id>client</id>
             <phase>package</phase>
             <goals>
               <goal>jar</goal>
             </goals>
             <configuration>
               <classifier>client</classifier>
+            </configuration>
+          </execution>
+          <execution>
+            <id>server</id>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+            <configuration>
+              <classifier>server</classifier>
             </configuration>
           </execution>
         </executions>
